@@ -20,6 +20,10 @@ For old versions to use with iTerm or X11/xterm, using the finder contextual men
 
 ###Changes:
 
+Version 2.6.2 (Symaxion)
+
+ * Update for iTerm2 3.0
+
 Version 2.6.1 (andrivet)
 
  * Add El Capitan icons (from strages fork)
