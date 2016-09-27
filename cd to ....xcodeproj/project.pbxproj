@@ -32,7 +32,6 @@
 
 /* Begin PBXBuildFile section */
 		69449AD20B8909A500A19631 /* CD2PluginProtocolV1.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 69449AD10B8909A400A19631 /* CD2PluginProtocolV1.h */; };
-		6947E8C713DA6362008C982D /* lion.icns in Resources */ = {isa = PBXBuildFile; fileRef = 6947E8C613DA6362008C982D /* lion.icns */; };
 		6963D7FD1835ED290039592E /* LICENSE.md in Resources */ = {isa = PBXBuildFile; fileRef = 6963D7FC1835ED290039592E /* LICENSE.md */; };
 		69968DC118385B4C00FB4A35 /* terminal.bundle in Terminal Plugin */ = {isa = PBXBuildFile; fileRef = 69449AA50B89080600A19631 /* terminal.bundle */; };
 		69968DC318385C2C00FB4A35 /* cd to.app in iTerm */ = {isa = PBXBuildFile; fileRef = 8D1107320486CEB800E47090 /* cd to.app */; };
@@ -46,6 +45,8 @@
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		BED36B6B1D9AAF7C00C25B65 /* elcapitan.icns in Resources */ = {isa = PBXBuildFile; fileRef = BED36B6A1D9AAF7C00C25B65 /* elcapitan.icns */; };
+		BED36B6D1D9AB2E900C25B65 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BED36B6C1D9AB2E900C25B65 /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXBuildRule section */
@@ -205,12 +206,13 @@
 		69449AD10B8909A400A19631 /* CD2PluginProtocolV1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CD2PluginProtocolV1.h; path = plugins/CD2PluginProtocolV1.h; sourceTree = "<group>"; };
 		69449C090B892D0B00A19631 /* X11_xterm.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = X11_xterm.xcodeproj; path = plugins/X11_xterm/X11_xterm.xcodeproj; sourceTree = "<group>"; };
 		69449D830B894DBF00A19631 /* iterm.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = iterm.xcodeproj; path = plugins/iterm/iterm.xcodeproj; sourceTree = "<group>"; };
-		6947E8C613DA6362008C982D /* lion.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = lion.icns; sourceTree = "<group>"; };
 		6963D7FC1835ED290039592E /* LICENSE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.md; sourceTree = "<group>"; };
 		69C8A98D106E818900C4DE0D /* ScriptingBridge.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScriptingBridge.framework; path = /System/Library/Frameworks/ScriptingBridge.framework; sourceTree = "<absolute>"; };
 		69C8AA70106E8F5800C4DE0D /* Finder.app */ = {isa = PBXFileReference; lastKnownFileType = wrapper.application; name = Finder.app; path = /System/Library/CoreServices/Finder.app; sourceTree = "<absolute>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* cd to.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "cd to.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BED36B6A1D9AAF7C00C25B65 /* elcapitan.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = elcapitan.icns; sourceTree = "<group>"; };
+		BED36B6C1D9AB2E900C25B65 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "cd to/Images.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -287,8 +289,9 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				BED36B6C1D9AB2E900C25B65 /* Images.xcassets */,
+				BED36B6A1D9AAF7C00C25B65 /* elcapitan.icns */,
 				6963D7FC1835ED290039592E /* LICENSE.md */,
-				6947E8C613DA6362008C982D /* lion.icns */,
 				8D1107310486CEB800E47090 /* Info.plist */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
 			);
@@ -375,7 +378,7 @@
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0800;
 				TargetAttributes = {
 					8D1107260486CEB800E47090 = {
 						DevelopmentTeam = VURRGRYW45;
@@ -443,9 +446,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				6963D7FD1835ED290039592E /* LICENSE.md in Resources */,
+				BED36B6D1D9AB2E900C25B65 /* Images.xcassets in Resources */,
+				BED36B6B1D9AAF7C00C25B65 /* elcapitan.icns in Resources */,
 				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
 				69C8AA71106E8F5800C4DE0D /* Finder.app in Resources */,
-				6947E8C713DA6362008C982D /* lion.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -467,7 +471,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 			shellPath = /bin/sh;
-			shellScript = "echo \"sign $CONFIGURATION_BUILD_DIR/terminal/cd to.app\"\necho \"sign $CONFIGURATION_BUILD_DIR/iterm/cd to.app\"\necho \"sign $CONFIGURATION_BUILD_DIR/x11_xterm/cd to.app\"\n\ncodesign -s \"Developer ID Application: James Tuley (VURRGRYW45)\" \"$CONFIGURATION_BUILD_DIR/terminal/cd to.app\" \"$CONFIGURATION_BUILD_DIR/iterm/cd to.app\" \"$CONFIGURATION_BUILD_DIR/x11_xterm/cd to.app\"\n\nmkdir -p \"$TARGET_BUILD_DIR\"\nmv \"$CONFIGURATION_BUILD_DIR/terminal\" \"$TARGET_BUILD_DIR/terminal\"\nmv \"$CONFIGURATION_BUILD_DIR/iterm\" \"$TARGET_BUILD_DIR/iterm\"\nmv \"$CONFIGURATION_BUILD_DIR/x11_xterm\" \"$TARGET_BUILD_DIR/x11_xterm\"\n\n";
+			shellScript = "echo \"sign $CONFIGURATION_BUILD_DIR/terminal/cd to.app\"\necho \"sign $CONFIGURATION_BUILD_DIR/iterm/cd to.app\"\necho \"sign $CONFIGURATION_BUILD_DIR/x11_xterm/cd to.app\"\n\ncodesign -s \"Mac Developer: Sebastien Andrivet (KJ68ZN3V38)\" \"$CONFIGURATION_BUILD_DIR/terminal/cd to.app\" \"$CONFIGURATION_BUILD_DIR/iterm/cd to.app\" \"$CONFIGURATION_BUILD_DIR/x11_xterm/cd to.app\"\n\nmkdir -p \"$TARGET_BUILD_DIR\"\nmv \"$CONFIGURATION_BUILD_DIR/terminal\" \"$TARGET_BUILD_DIR/terminal\"\nmv \"$CONFIGURATION_BUILD_DIR/iterm\" \"$TARGET_BUILD_DIR/iterm\"\nmv \"$CONFIGURATION_BUILD_DIR/x11_xterm\" \"$TARGET_BUILD_DIR/x11_xterm\"\n\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -540,6 +544,7 @@
 		C01FCF4B08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "";
 				COMBINE_HIDPI_IMAGES = YES;
@@ -552,6 +557,7 @@
 				INSTALL_PATH = /unsigned;
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				OTHER_CODE_SIGN_FLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.andrivet.cdto;
 				PRODUCT_NAME = "cd to";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
@@ -561,6 +567,7 @@
 		C01FCF4C08A954540054247B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "";
 				COMBINE_HIDPI_IMAGES = YES;
@@ -571,6 +578,7 @@
 				INSTALL_PATH = /unsigned;
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				OTHER_CODE_SIGN_FLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.andrivet.cdto;
 				PRODUCT_NAME = "cd to";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
@@ -580,7 +588,23 @@
 		C01FCF4F08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INSTALL_PATH = "";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
@@ -592,7 +616,22 @@
 		C01FCF5008A954540054247B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INSTALL_PATH = "";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
